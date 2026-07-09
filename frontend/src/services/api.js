@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api',
+  baseURL: 'https://ideamagix-assginment.onrender.com',
   headers: {
     'Content-Type': 'application/json',
   },
@@ -28,7 +28,7 @@ api.interceptors.response.use(
   (error) => {
     if (error.response && error.response.status === 401) {
       console.warn('Session trace validation failed. Clearing state contexts.');
-      localStorage.removeItem('crm_user_session');
+      Storage.removeItem('crm_user_session');
       if (window.location.pathname !== '/login') {
         window.location.href = '/login';
       }
