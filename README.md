@@ -3,6 +3,15 @@
 A modern Customer Relationship Management (CRM) system built using the MERN Stack. The application helps organizations manage users, leads, tags, and customer interactions through a secure role-based dashboard.
 
 ---
+```json
+{
+  "name": "Super Admin",
+  "email": "your-email@example.com",
+  "password": "bcrypt_hashed_password",
+  "role": "Super Admin",
+  "isActive": true
+}
+```
 
 ## Features
 
